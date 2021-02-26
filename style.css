@@ -1,0 +1,65 @@
+#header {
+  text-align: center;
+}
+
+#header h1 {
+  font-size: 50px;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 100px 0px 100px;
+  justify-content: center;
+}
+
+#container .pad {
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+  border-radius: 50px;
+}
+
+.red {
+  background-color: red;
+}
+.orange {
+  background-color: orange;
+}
+.yellow {
+  background-color: yellow;
+}
+.green {
+  background-color: green;
+}
+.blue {
+  background-color: blue;
+}
+.violet {
+  background-color: violet;
+}
+.black {
+  background-color: black;
+}
+.playing {
+  background: linear-gradient(
+    60deg,
+    hsl(224, 85%, 66%),
+    hsl(269, 85%, 66%),
+    hsl(314, 85%, 66%),
+    hsl(359, 85%, 66%),
+    hsl(44, 85%, 66%),
+    hsl(89, 85%, 66%),
+    hsl(134, 85%, 66%),
+    hsl(179, 85%, 66%)
+  );
+  background-size: 300% 300%;
+  background-position: 0 50%;
+  animation: moveGradient 4s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
